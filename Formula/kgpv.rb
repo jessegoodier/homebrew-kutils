@@ -32,6 +32,19 @@ class Kgpv < Formula
     (zsh_completion/"_kgpv").write Utils.safe_popen_read(bin/"kgpv", "--completions", "zsh")
   end
 
+  def caveats
+    <<~EOS
+      If you use oh-my-zsh, the kubectl plugin may define a conflicting alias.
+      To check: alias | grep kgpv
+
+      To unalias for your current session:
+        unalias kgpv
+
+      To make it permanent, add this to your ~/.zshrc:
+        echo "unalias kgpv" >> ~/.zshrc
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/kgpv --version")
   end
