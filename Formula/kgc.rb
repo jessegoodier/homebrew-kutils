@@ -28,6 +28,8 @@ class Kgc < Formula
 
   def install
     bin.install "kgc"
+    (bash_completion/"kgc").write Utils.safe_popen_read(bin/"kgc", "--completions", "bash")
+    (zsh_completion/"_kgc").write Utils.safe_popen_read(bin/"kgc", "--completions", "zsh")
   end
 
   test do
