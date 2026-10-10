@@ -1,28 +1,28 @@
 class Kgpv < Formula
   desc "List Kubernetes PersistentVolumes with PVCs, pods, zones, and sizes"
   homepage "https://github.com/jessegoodier/kutils"
-  version "0.1.15"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgpv_#{version}_darwin_amd64.tar.gz"
-      sha256 "812ed0c7d5bfdd01bf3f218a0afb7f95337ae5a9b0c80fe1cab2f5b3478444ac" # darwin_amd64
+      sha256 "06098598f21cccf4234a5e8777015e9acee4cb755db2a95852cecc34612821ad" # darwin_amd64
     end
     on_arm do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgpv_#{version}_darwin_arm64.tar.gz"
-      sha256 "5ba402547a72f9e72d507e4deadf3f01b31778a6af470ffe593fd00d92bd341c" # darwin_arm64
+      sha256 "ef598171daa757185d483b1c7702fe38530e6fe798cb204e5851316b6d9cfe3d" # darwin_arm64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgpv_#{version}_linux_amd64.tar.gz"
-      sha256 "6bc62b71537da474e1ddfb1d4534c426418cdeb039d89069fd820f86cac801f3" # linux_amd64
+      sha256 "deb06a291548ec30c9df8b1b4bf7b9abe4993b0c6e558eaea20506969f9f9156" # linux_amd64
     end
     on_arm do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgpv_#{version}_linux_arm64.tar.gz"
-      sha256 "c5674506828aeff8fc92563ed0863a459dc50ba252d1cf51825310a45fba8688" # linux_arm64
+      sha256 "cb8b01dae1c5dae3e36f521fb0d08bd7dccca0df3cde40f3aac6db06ec4ca3d6" # linux_arm64
     end
   end
 
