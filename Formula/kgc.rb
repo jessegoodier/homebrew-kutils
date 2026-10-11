@@ -1,28 +1,28 @@
 class Kgc < Formula
   desc "kubectl get pods with color-coded status and last restart reason"
   homepage "https://github.com/jessegoodier/kutils"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgc_#{version}_darwin_amd64.tar.gz"
-      sha256 "278d69976de7e45b945b1d1df591998e417d31f81f2c5726610625d7163fb0a6" # darwin_amd64
+      sha256 "af2259089ea77fd84763e7373d3bb259f49d607bb97d82e45d5438b0d23f1a17" # darwin_amd64
     end
     on_arm do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgc_#{version}_darwin_arm64.tar.gz"
-      sha256 "0b9033d04a4d9883e7eccfb2c7f0cbaa8eac6b03d4c3f183309d700d012e6c0f" # darwin_arm64
+      sha256 "716102768ffb564cef63f1cb4c7dbdbe3d6894140e22b60146ab8323b900a474" # darwin_arm64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgc_#{version}_linux_amd64.tar.gz"
-      sha256 "b3ab935e262ec59c532a2c475e531f7be962bce8d7162c3967963c9390880072" # linux_amd64
+      sha256 "efd8048f76df12ee66bda6c277fb409efdd637f99f7987738b61148ed0925a8a" # linux_amd64
     end
     on_arm do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/kgc_#{version}_linux_arm64.tar.gz"
-      sha256 "b140120fe609ffbe28ed6974821685600b55a89ef1dda2a8f7baa76206d5d202" # linux_arm64
+      sha256 "e6defd32dcbc28d7658c69c6ae21eb6693eaa61bd6c69164963ae30d520e7395" # linux_arm64
     end
   end
 

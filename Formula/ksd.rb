@@ -3,28 +3,28 @@ class Ksd < Formula
   homepage "https://github.com/jessegoodier/kutils"
   # version and sha256 values are placeholders until the first kutils release that
   # ships ksd; the kutils release workflow rewrites them automatically.
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/ksd_#{version}_darwin_amd64.tar.gz"
-      sha256 "c943ca42b92f40999cd1ea363898035d65fcfe3859d892c3b80cb045a53ef164" # darwin_amd64
+      sha256 "c46dc5986b8eb1b434342ac524068e0e2fbd8345e570acf958ab8ab8a5353713" # darwin_amd64
     end
     on_arm do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/ksd_#{version}_darwin_arm64.tar.gz"
-      sha256 "bba62f753fceba7582adbf724de304d5b8b78e203c7008a89cedf17877f98b30" # darwin_arm64
+      sha256 "efdf94148265ea9864802fdfd22d3146764e08603fe46bfe2e2ce56c5c1dfdfb" # darwin_arm64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/ksd_#{version}_linux_amd64.tar.gz"
-      sha256 "0075fccc68d2694b007283ca1a47ec197b90192ac44ff49f318a9d9a552056c5" # linux_amd64
+      sha256 "2b757910d67bffbc415c5944d60685c5394cddd3adefa2d0343821f15889503b" # linux_amd64
     end
     on_arm do
       url "https://github.com/jessegoodier/kutils/releases/download/v#{version}/ksd_#{version}_linux_arm64.tar.gz"
-      sha256 "cb496abadd3b0f88c9cb3e08372a26085fe357dcf7d640211a640ef9669b18fc" # linux_arm64
+      sha256 "12b5e44da57678e990fea55b98ce2440ba41a16fcc974f139fa2fefe01ceb254" # linux_arm64
     end
   end
 
