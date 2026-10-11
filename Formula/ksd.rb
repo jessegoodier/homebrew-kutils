@@ -30,8 +30,7 @@ class Ksd < Formula
 
   def install
     bin.install "ksd"
-    (bash_completion/"ksd").write Utils.safe_popen_read(bin/"ksd", "--completions", "bash")
-    (zsh_completion/"_ksd").write Utils.safe_popen_read(bin/"ksd", "--completions", "zsh")
+    generate_completions_from_executable(bin/"ksd", "--completions", shells: [:bash, :zsh])
   end
 
   test do
