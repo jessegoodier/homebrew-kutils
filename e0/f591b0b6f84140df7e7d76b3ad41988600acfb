@@ -1,0 +1,18 @@
+Formula/kgc.rb
+  h_cca6aa2712613d 2,31
+Formula/kgpv.rb
+  h_cca6aa2712613d 31
+Formula/ksd.rb
+  h_cca6aa2712613d 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e0f591b0b6f84140df7e7d76b3ad41988600acfb",
+  "prompts": {},
+  "humans": {
+    "h_cca6aa2712613d": {
+      "author": "jesse goodier <31039225+jessegoodier@users.noreply.github.com>"
+    }
+  }
+}
