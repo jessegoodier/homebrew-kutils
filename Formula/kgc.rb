@@ -1,5 +1,5 @@
 class Kgc < Formula
-  desc "kubectl get pods with color-coded status and last restart reason"
+  desc "Kubectl get pods with color-coded status and last restart reason"
   homepage "https://github.com/jessegoodier/kutils"
   version "0.3.0"
   license "MIT"
@@ -28,8 +28,7 @@ class Kgc < Formula
 
   def install
     bin.install "kgc"
-    (bash_completion/"kgc").write Utils.safe_popen_read(bin/"kgc", "--completions", "bash")
-    (zsh_completion/"_kgc").write Utils.safe_popen_read(bin/"kgc", "--completions", "zsh")
+    generate_completions_from_executable(bin/"kgc", "--completions", shells: [:bash, :zsh])
   end
 
   test do

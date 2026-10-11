@@ -28,8 +28,7 @@ class Kgpv < Formula
 
   def install
     bin.install "kgpv"
-    (bash_completion/"kgpv").write Utils.safe_popen_read(bin/"kgpv", "--completions", "bash")
-    (zsh_completion/"_kgpv").write Utils.safe_popen_read(bin/"kgpv", "--completions", "zsh")
+    generate_completions_from_executable(bin/"kgpv", "--completions", shells: [:bash, :zsh])
   end
 
   def caveats
